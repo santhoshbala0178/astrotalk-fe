@@ -16,6 +16,9 @@ const StyledDetailPage = styled.div`
   margin-left: 12%;
   margin-right: 20px;
   padding-left: 10px;
+  @media (max-width: 500px) {
+    margin-left: 2%;
+  }
 `;
 
 const StyledDetailHeader = styled.div`
@@ -26,6 +29,9 @@ const StyledDetailHeader = styled.div`
 const StyledDetailWithIconHolder = styled.div`
   margin-bottom: 10px;
   display: flex;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 `;
 
 const StyledCardDetailHolder = styled.div`
@@ -40,6 +46,12 @@ const StyledDetailsDiv = styled.div`
   margin-top: 2%;
   padding-left: 2%;
   width: 85%;
+  @media (max-width: 500px) {
+    width: 60%;
+  }
+  @media (max-width: 250px) {
+    width: 100%;
+  }
 `;
 
 const StyledDetailAboutMe = styled.div`
@@ -49,6 +61,10 @@ const StyledDetailAboutMe = styled.div`
 
 const StyledSpecialityHolder = styled.div`
   display: flex;
+
+  @media (max-width: 250px) {
+    flex-direction: column;
+  }
 `;
 
 export const GET_ASTROLOGER = gql`

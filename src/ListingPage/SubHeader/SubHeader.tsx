@@ -7,21 +7,32 @@ const StyledSubHeader = styled.div`
   margin: 10px;
   margin-top: 1%;
   display: flex;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const StyledTextContainer = styled.div`
   width: 50%;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 const StyledContainer = styled.div`
   width: 50%;
   display: flex;
   justify-content: space-evenly;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 const StyledTextHolder = styled.div`
   font-size: 21px;
-  color: #444444;
+  color: #444
+  444;
   font-weight: 400;
   text-align: center;
   }

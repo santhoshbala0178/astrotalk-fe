@@ -17,6 +17,7 @@ const StyledCard = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   margin: 10px;
   display: flex;
+  min-width: 350px;
 `;
 
 const StyledImageHolder = styled.div`
@@ -44,7 +45,7 @@ interface Props {
 }
 
 const Card: React.FC<Props> = ({ astrologer }) => (
-  <StyledCard>
+  <StyledCard data-testid="astro-card">
     <StyledImageHolder>
       <CardImage />
       <StyleCardRatingHolder>

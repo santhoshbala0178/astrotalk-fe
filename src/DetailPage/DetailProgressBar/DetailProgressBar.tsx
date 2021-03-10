@@ -10,6 +10,11 @@ const StyledNumberHolder = styled.div`
   font-size: 14px;
 `;
 
+const StyledTotalHolder = styled.div`
+  width: 20%;
+  text-align: left;
+`;
+
 const StyledBackgroundDiv = styled.div`
   height: 17px;
   width: 85%;
@@ -41,7 +46,7 @@ const DetailProgressBar: React.FC<Props> = ({
     <StyledBackgroundDiv>
       <StyledProgressBar percentage={percentage} color={color} />
     </StyledBackgroundDiv>
-    <StyledNumberHolder>{totalReviews}</StyledNumberHolder>
+    <StyledTotalHolder>{totalReviews}</StyledTotalHolder>
   </StyledProgressBarHolder>
 );
 

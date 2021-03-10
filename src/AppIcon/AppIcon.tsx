@@ -26,6 +26,8 @@ const AppIcon: React.FC = () => (
         src="/assets/TAT_web_logo2.png"
         alt="Astrotalk logo icon"
         title="Logo icon of Astrotalk"
+        width="40px"
+        height="40px"
       />
     </StyledLink>
     <div>

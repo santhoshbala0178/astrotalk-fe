@@ -16,8 +16,6 @@ const StyledCardRating = styled.span`
 `;
 
 const StyledImage = styled.img`
-  width: 8px;
-  height: 8px;
   padding-right: 2px;
 `;
 
@@ -27,7 +25,12 @@ interface Props {
 
 const CardRatingNumber: React.FC<Props> = ({ ratings }) => (
   <SyledCardRatingHolder>
-    <StyledImage src="/assets/rating.png" alt="Total Rating" />
+    <StyledImage
+      src="/assets/rating.png"
+      alt="Total Rating"
+      width="8px"
+      height="8px"
+    />
     <StyledCardRating>{`${ratings} total`}</StyledCardRating>
   </SyledCardRatingHolder>
 );

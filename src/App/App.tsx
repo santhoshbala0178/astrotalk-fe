@@ -1,18 +1,23 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import DetailPage from '../DetailPage/DetailPage';
 import Header from '../Header';
-import ListingPage from '../ListingPage/ListingPage';
+
+const DetailPage = React.lazy(() => import('../DetailPage/DetailPage'));
+const ListingPage = React.lazy(() => import('../ListingPage/ListingPage'));
 
 const App: React.FC = () => (
   <Router>
     <Header />
     <Switch>
       <Route exact path="/">
-        <ListingPage />
+        <Suspense fallback={<div>Loading...</div>}>
+          <ListingPage />
+        </Suspense>
       </Route>
       <Route exact path="/best-astrologer/:id">
-        <DetailPage />
+        <Suspense fallback={<div>Loading...</div>}>
+          <DetailPage />
+        </Suspense>
       </Route>
     </Switch>
   </Router>

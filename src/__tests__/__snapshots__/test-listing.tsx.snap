@@ -1,0 +1,425 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Listing Page Snapshot Test Listing  Page 1`] = `
+<div>
+  <div
+    class="sc-bBXqnf kUNHDl"
+  >
+    <div
+      class="sc-hHftDr kagUfo"
+    >
+      <div
+        class="sc-dmlrTW jHepxZ"
+      >
+        <div
+          class="sc-fKFyDc bdRfkw"
+        >
+          Chat with Astrologer
+        </div>
+      </div>
+      <div
+        class="sc-kfzAmx eruYhV"
+      >
+        <div
+          class="sc-idOhPF jEdYuu"
+        >
+          <select
+            class="sc-dIUggk dHjHTc"
+          >
+            <option
+              value="NO_SORT"
+            >
+              Sort By
+            </option>
+            <option
+              value="EXP_HIGH"
+            >
+              Experience: High to Low
+            </option>
+            <option
+              value="EXP_LOW"
+            >
+              Experience: Low to High
+            </option>
+            <option
+              value="PRICE_HIGH"
+            >
+              Price: High to Low
+            </option>
+            <option
+              value="PRICE_LOW"
+            >
+              Price: Low to High
+            </option>
+            <option
+              value="RATING_HIGH"
+            >
+              Rating: High to Low
+            </option>
+          </select>
+        </div>
+        <div
+          class="sc-fFubgz jiNEGY"
+        >
+          <input
+            class="sc-bkzZxe eqYwcg"
+            data-testid="search-input"
+            placeholder="Search name...."
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-iwyYcG ggyuIB"
+    >
+      <div
+        class="sc-iqHYGH fiQSDt"
+        data-testid="astro-card"
+      >
+        <div
+          class="sc-crrsfI GNQKu"
+        >
+          <div
+            class="sc-dlfnbm brtggE"
+          >
+            <a
+              class="sc-eCssSg glAyEi"
+              href="/best-astrologer/bharath"
+            >
+              <img
+                class="sc-hKgILt fMBXVU"
+                height="40px"
+                src="/assets/TAT_web_logo2.png"
+                width="40px"
+              />
+            </a>
+          </div>
+          <div
+            class="sc-dQppl hMnvEw"
+          >
+            <img
+              alt="Star Rating"
+              class="sc-gsTCUz fOtSmi"
+              height="15px"
+              src="/assets/star.svg"
+              width="15px"
+            />
+            <img
+              alt="Star Rating"
+              class="sc-gsTCUz fOtSmi"
+              height="15px"
+              src="/assets/star.svg"
+              width="15px"
+            />
+            <img
+              alt="Star Rating"
+              class="sc-gsTCUz fOtSmi"
+              height="15px"
+              src="/assets/star.svg"
+              width="15px"
+            />
+            <img
+              alt="Star Rating"
+              class="sc-gsTCUz fOtSmi"
+              height="15px"
+              src="/assets/star.svg"
+              width="15px"
+            />
+            <img
+              alt="Star Rating"
+              class="sc-gsTCUz fOtSmi"
+              height="15px"
+              src="/assets/star.svg"
+              width="15px"
+            />
+          </div>
+          <div
+            class="sc-pFZIQ jdFpGQ"
+          >
+            <img
+              alt="Total Rating"
+              class="sc-kEjbxe iwwVPE"
+              height="8px"
+              src="/assets/rating.png"
+              width="8px"
+            />
+            <span
+              class="sc-jrAGrp cApaSj"
+            >
+              1829 total
+            </span>
+          </div>
+        </div>
+        <div
+          class="sc-bqyKva jmnZnB"
+        >
+          <div
+            class="sc-jSgupP jwkMIT"
+          >
+            <a
+              class="sc-gKsewC VvBIK"
+              href="/best-astrologer/1"
+            >
+              Bharath
+            </a>
+          </div>
+          <div
+            class="sc-bdfBwQ bAedth"
+          >
+            English, Hindi
+          </div>
+          <div
+            class="sc-bdfBwQ bAedth"
+          >
+            Tarot, Numerology
+          </div>
+          <div
+            class="sc-bdfBwQ bAedth"
+          >
+            Exp: 7 Years
+          </div>
+          <div>
+            <img
+              alt="Rupee"
+              class="sc-fubCfw duHFTV"
+              height="10px"
+              src="/assets/rupee.svg"
+              width="10px"
+            />
+            <span
+              class="sc-iBPRYJ hasEMx"
+            >
+              7
+              /min
+            </span>
+          </div>
+        </div>
+        <div
+          class="sc-kstrdz glrsGB"
+        />
+      </div>
+      <div
+        class="sc-iqHYGH fiQSDt"
+        data-testid="astro-card"
+      >
+        <div
+          class="sc-crrsfI GNQKu"
+        >
+          <div
+            class="sc-dlfnbm brtggE"
+          >
+            <a
+              class="sc-eCssSg glAyEi"
+              href="/best-astrologer/bharath"
+            >
+              <img
+                class="sc-hKgILt fMBXVU"
+                height="40px"
+                src="/assets/TAT_web_logo2.png"
+                width="40px"
+              />
+            </a>
+          </div>
+          <div
+            class="sc-dQppl hMnvEw"
+          >
+            <img
+              alt="Star Rating"
+              class="sc-gsTCUz fOtSmi"
+              height="15px"
+              src="/assets/star.svg"
+              width="15px"
+            />
+            <img
+              alt="Star Rating"
+              class="sc-gsTCUz fOtSmi"
+              height="15px"
+              src="/assets/star.svg"
+              width="15px"
+            />
+            <img
+              alt="Star Rating"
+              class="sc-gsTCUz fOtSmi"
+              height="15px"
+              src="/assets/star.svg"
+              width="15px"
+            />
+          </div>
+          <div
+            class="sc-pFZIQ jdFpGQ"
+          >
+            <img
+              alt="Total Rating"
+              class="sc-kEjbxe iwwVPE"
+              height="8px"
+              src="/assets/rating.png"
+              width="8px"
+            />
+            <span
+              class="sc-jrAGrp cApaSj"
+            >
+              2500 total
+            </span>
+          </div>
+        </div>
+        <div
+          class="sc-bqyKva jmnZnB"
+        >
+          <div
+            class="sc-jSgupP jwkMIT"
+          >
+            <a
+              class="sc-gKsewC VvBIK"
+              href="/best-astrologer/2"
+            >
+              Pooja
+            </a>
+          </div>
+          <div
+            class="sc-bdfBwQ bAedth"
+          >
+            English, Hindi
+          </div>
+          <div
+            class="sc-bdfBwQ bAedth"
+          >
+            Tarot, Numerology
+          </div>
+          <div
+            class="sc-bdfBwQ bAedth"
+          >
+            Exp: 4 Years
+          </div>
+          <div>
+            <img
+              alt="Rupee"
+              class="sc-fubCfw duHFTV"
+              height="10px"
+              src="/assets/rupee.svg"
+              width="10px"
+            />
+            <span
+              class="sc-iBPRYJ hasEMx"
+            >
+              2
+              /min
+            </span>
+          </div>
+        </div>
+        <div
+          class="sc-kstrdz glrsGB"
+        />
+      </div>
+      <div
+        class="sc-iqHYGH fiQSDt"
+        data-testid="astro-card"
+      >
+        <div
+          class="sc-crrsfI GNQKu"
+        >
+          <div
+            class="sc-dlfnbm brtggE"
+          >
+            <a
+              class="sc-eCssSg glAyEi"
+              href="/best-astrologer/bharath"
+            >
+              <img
+                class="sc-hKgILt fMBXVU"
+                height="40px"
+                src="/assets/TAT_web_logo2.png"
+                width="40px"
+              />
+            </a>
+          </div>
+          <div
+            class="sc-dQppl hMnvEw"
+          >
+            <img
+              alt="Star Rating"
+              class="sc-gsTCUz fOtSmi"
+              height="15px"
+              src="/assets/star.svg"
+              width="15px"
+            />
+          </div>
+          <div
+            class="sc-pFZIQ jdFpGQ"
+          >
+            <img
+              alt="Total Rating"
+              class="sc-kEjbxe iwwVPE"
+              height="8px"
+              src="/assets/rating.png"
+              width="8px"
+            />
+            <span
+              class="sc-jrAGrp cApaSj"
+            >
+              1029 total
+            </span>
+          </div>
+        </div>
+        <div
+          class="sc-bqyKva jmnZnB"
+        >
+          <div
+            class="sc-jSgupP jwkMIT"
+          >
+            <a
+              class="sc-gKsewC VvBIK"
+              href="/best-astrologer/3"
+            >
+              Sandy
+            </a>
+          </div>
+          <div
+            class="sc-bdfBwQ bAedth"
+          >
+            English, Hindi
+          </div>
+          <div
+            class="sc-bdfBwQ bAedth"
+          >
+            Tarot, Numerology
+          </div>
+          <div
+            class="sc-bdfBwQ bAedth"
+          >
+            Exp: 7 Years
+          </div>
+          <div>
+            <img
+              alt="Rupee"
+              class="sc-fubCfw duHFTV"
+              height="10px"
+              src="/assets/rupee.svg"
+              width="10px"
+            />
+            <span
+              class="sc-iBPRYJ hasEMx"
+            >
+              12
+              /min
+            </span>
+          </div>
+        </div>
+        <div
+          class="sc-kstrdz glrsGB"
+        />
+      </div>
+    </div>
+    <div
+      class="sc-hBEYos hrYMlc"
+    >
+      <button
+        class="sc-fodVxV fzKvnv"
+        data-testid="load-more"
+      >
+        Load more...
+      </button>
+    </div>
+  </div>
+</div>
+`;

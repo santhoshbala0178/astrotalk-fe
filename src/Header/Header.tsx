@@ -7,17 +7,18 @@ const StyledHeaderDiv = styled.div`
   box-shadow: 0 0px 0px 0px #ccc;
   display: flex;
   align-items: center;
+
+  @media (max-width: 350px) {
+    display: none;
+  }
 `;
 
 const StyledPhoneHolder = styled.div`
   margin-left: auto;
-  width: 10%;
   display: flex;
 `;
 
 const StyledPhoneIcon = styled.img`
-  width: 20px;
-  height: 20px;
 `;
 
 const StyledPhoneDiv = styled.div`
@@ -30,7 +31,12 @@ const Header: React.FC = () => (
   <StyledHeaderDiv>
     <AppIcon />
     <StyledPhoneHolder>
-      <StyledPhoneIcon src="/assets/phone.svg" alt="Phone no:" />
+      <StyledPhoneIcon
+        src="/assets/phone.svg"
+        alt="Phone no:"
+        width="20px"
+        height="20px"
+      />
       <StyledPhoneDiv>+91 9606047081</StyledPhoneDiv>
     </StyledPhoneHolder>
   </StyledHeaderDiv>

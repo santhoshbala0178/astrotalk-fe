@@ -9,6 +9,9 @@ import SubHeader from '../SubHeader';
 
 const StyledListingPage = styled.div`
   margin-left: 12%;
+  @media (max-width: 500px) {
+    margin-left: 2%;
+  }
 `;
 
 const StyledCardHolder = styled.div`
@@ -44,8 +47,8 @@ export const ASTROLOGER_TILE_DATA = gql`
 export const GET_ASTROLOGERS = gql`
   query GetAstrologers($sortBy: SortEnum, $searchName: String, $after: String) {
     astrologers(sortBy: $sortBy, searchName: $searchName, after: $after) {
-      cursor,
-      hasMore,
+      cursor
+      hasMore
       astrologers {
         ...AstrologerData
       }
@@ -59,20 +62,20 @@ const ListingPage: React.FC = () => {
   const searchName = useReactiveVar(searchNameVar);
   const [isLoadingMore, changeIsLoadingMore] = useState(false);
 
-  const { data, loading, error, fetchMore} = useQuery(GET_ASTROLOGERS, {
-    variables: { sortBy, searchName},
+  const { data, loading, error, fetchMore } = useQuery(GET_ASTROLOGERS, {
+    variables: { sortBy, searchName },
   });
 
-
   async function loadMore() {
-    changeIsLoadingMore(true)
+    changeIsLoadingMore(true);
     await fetchMore({
       variables: {
-        sortBy, searchName,
-        after: data.astrologers.cursor
-      }
+        sortBy,
+        searchName,
+        after: data.astrologers.cursor,
+      },
     });
-    changeIsLoadingMore(false)
+    changeIsLoadingMore(false);
   }
 
   return (
@@ -86,11 +89,10 @@ const ListingPage: React.FC = () => {
             <Card astrologer={astrologer} key={`${index + 1}`} />
           ))}
       </StyledCardHolder>
-      {data && data.astrologers &&
+      {data
+        && data.astrologers &&
         data.astrologers.hasMore &&
-        (
-          isLoadingMore?<Loader/>: <LoadMore loadMore={loadMore} />
-        )}
+        (isLoadingMore ? <Loader /> : <LoadMore loadMore={loadMore} />)}
     </StyledListingPage>
   );
 };

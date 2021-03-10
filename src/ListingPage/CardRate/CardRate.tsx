@@ -12,9 +12,6 @@ const StyledImage = styled.img`
   width: 10px;
   height: 10px;
   padding-right: 2px;
-  g {
-    fill: gray;
-  }
 `;
 
 interface Props {
@@ -23,7 +20,12 @@ interface Props {
 
 const CardRate: React.FC<Props> = ({ rate }) => (
   <div>
-    <StyledImage src="/assets/rupee.svg" alt="Rupee" />
+    <StyledImage
+      src="/assets/rupee.svg"
+      alt="Rupee"
+      width="10px"
+      height="10px"
+    />
     <StyledCardRate>
       {rate}
       /min

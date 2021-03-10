@@ -10,6 +10,7 @@ const StyledReviewHolder = styled.div`
 
 const StyledLeftHolder = styled.div`
   width: 7%;
+  min-width: 45px;
 `;
 
 const StyledUserHolder = styled.div`

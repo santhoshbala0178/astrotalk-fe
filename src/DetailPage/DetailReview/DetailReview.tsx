@@ -14,6 +14,9 @@ const StyledReviewsHeader = styled.div`
 const StyledReviewSummaryHolder = styled.div`
   display: flex;
   margin: 10px;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 `;
 
 const StyledStarRatingHolder = styled.div``;
@@ -21,6 +24,18 @@ const StyledStarRatingHolder = styled.div``;
 const SyledSummaryHolderDiv = styled.div`
   width: 50%;
   text-align: center;
+  @media (max-width: 500px) {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+`;
+
+const SyledProgressHolderDiv = styled.div`
+  width: 50%;
+  text-align: center;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 const StyledDetailedReviewHolder = styled.div`
@@ -53,7 +68,7 @@ const DetailReview: React.FC<Props> = ({ reviewDetails, allDetails }) => {
           </StyledStarRatingHolder>
           <DetailRatingNumber rating={reviewDetails.totalReviews} />
         </SyledSummaryHolderDiv>
-        <SyledSummaryHolderDiv>
+        <SyledProgressHolderDiv>
           <DetailProgressBar
             rating="5"
             totalReviews={reviewDetails.individualRating5}
@@ -99,7 +114,7 @@ const DetailReview: React.FC<Props> = ({ reviewDetails, allDetails }) => {
             )}`}
             color="#ff8c5a"
           />
-        </SyledSummaryHolderDiv>
+        </SyledProgressHolderDiv>
       </StyledReviewSummaryHolder>
       <StyledDetailedReviewHolder>
         {allDetails.map((eachReview, index) => (

@@ -26,21 +26,22 @@ const StyledSearchInput = styled.input`
   }
 `;
 const SearchListPage: React.FC = () => {
-  const [curVal, setCurVal] = useState("")
+  const [curVal, setCurVal] = useState('');
 
   const setDebounced = _.debounce((val) => searchNameVar(val), 1000);
 
   function handleOnChange(e) {
-    setCurVal(e.target.value, )
+    setCurVal(e.target.value);
   }
 
   useEffect(() => {
-    setDebounced(curVal)
-  },[curVal])
-  
+    setDebounced(curVal);
+  }, [setDebounced, curVal]);
+
   return (
     <StyledSearchHolder>
       <StyledSearchInput
+        data-testid="search-input"
         placeholder="Search name...."
         value={curVal}
         onChange={(e) => handleOnChange(e)}

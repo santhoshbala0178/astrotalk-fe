@@ -1,4 +1,5 @@
 const HTMLWebPackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const HTMLWebPackPluginConfig = new HTMLWebPackPlugin({
   template: `${__dirname}/public/index.html`,
@@ -7,7 +8,7 @@ const HTMLWebPackPluginConfig = new HTMLWebPackPlugin({
 });
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   node: {
     fs: 'empty',
     child_process: 'empty',
@@ -52,6 +53,16 @@ module.exports = {
     path: `${__dirname}/build`,
     publicPath: '/',
   },
-  plugins: [HTMLWebPackPluginConfig],
+  plugins: [
+    HTMLWebPackPluginConfig,
+    new CopyPlugin({
+      patterns: [
+        {
+          from: `${__dirname}/assets/`,
+          to: `${__dirname}/build/assets/`,
+        },
+      ],
+    }),
+  ],
   resolve: { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
 };

@@ -1,4 +1,3 @@
-import { useReactiveVar } from '@apollo/client';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -27,13 +26,9 @@ interface Props {
   loadMore: any;
 }
 
-const LoadMore: React.FC<Props> = ({loadMore}) => {
-  return (
-    <StyledDiv>
-      <StyledButton onClick={() => loadMore()}>
-        Load more...
-      </StyledButton>
-    </StyledDiv>
-  );
-};
+const LoadMore: React.FC<Props> = ({ loadMore }) => (
+  <StyledDiv>
+    <StyledButton data-testid="load-more" onClick={() => loadMore()}>Load more...</StyledButton>
+  </StyledDiv>
+);
 export default LoadMore;

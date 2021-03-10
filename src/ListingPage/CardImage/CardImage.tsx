@@ -26,9 +26,9 @@ const StyledLink = styled(Link)`
 const CardImage: React.FC = () => (
   <StyledImageHolder>
     <StyledLink to="/best-astrologer/bharath">
-      <StyledImage src="/assets/TAT_web_logo2.png" />
+      <StyledImage src="/assets/TAT_web_logo2.png" width="40px" height="40px" />
     </StyledLink>
   </StyledImageHolder>
-)
+);
 
 export default CardImage;
